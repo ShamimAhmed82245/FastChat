@@ -33,3 +33,7 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
 def get_users(db:Session = Depends(get_db)):
     users = get_all_user(db)
     return users
+
+@router.post("/single-user")
+def get_single_user():
+    pass
